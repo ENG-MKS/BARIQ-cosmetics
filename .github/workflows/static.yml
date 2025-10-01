@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BARIQ - معرض مستحضرات التجميل</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="glass">
+    <h1> BARIQ</h1>
+  </header>
+
+  <main class="gallery">
+    <div class="card glass">
+      <img src="https://source.unsplash.com/300x300/?lipstick" alt="أحمر شفاه" />
+      <h2>أحمر شفاه مخملي</h2>
+    </div>
+    <div class="card glass">
+      <img src="https://source.unsplash.com/300x300/?perfume" alt="عطر فاخر" />
+      <h2>عطر فاخر</h2>
+    </div>
+    <div class="card glass">
+      <img src="https://source.unsplash.com/300x300/?makeup" alt="مجموعة مكياج" />
+      <h2>مجموعة مكياج متألقة</h2>
+    </div>
+  </main>
+
+  <footer class="glass">
+    <p>لوحة التحكم: <a href="#" onclick="toggleAdmin()">فتح</a></p>
+  </footer>
+
+  <div id="adminPanel" class="glass hidden">
+    <h2>لوحة التحكم</h2>
+    <label>اسم المنتج: <input type="text" id="productName" /></label>
+    <label>رابط الصورة: <input type="text" id="productImage" /></label>
+    <button onclick="addProduct()">إضافة المنتج</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
